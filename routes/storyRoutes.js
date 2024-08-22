@@ -1,7 +1,11 @@
 const express = require('express');
+const path = require('path');
+const app = express();
 const router = express.Router();
 const storyController = require('../controllers/storyController');
 const upload = require('../config/upload');
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 router.post('/stories', upload.single('storyCover'), storyController.createStory);
 router.get('/stories', storyController.getStories);

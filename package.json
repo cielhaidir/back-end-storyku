@@ -1,0 +1,22 @@
+{
+  "name": "back-end-bigio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "supabase": "^1.190.0"
+  }
+}
